@@ -9,20 +9,36 @@ function App() {
     <Router>
       <div className="App">
         <header style={{ 
-          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+          background: '#2c3e50',
           color: 'white', 
-          padding: '20px'
+          padding: '15px 20px'
         }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <h1 style={{ margin: 0 }}>🧴 Cosmetic Safety Scanner</h1>
+          <div style={{ 
+            display: 'flex', 
+            justifyContent: 'space-between', 
+            alignItems: 'center',
+            maxWidth: '1200px',
+            margin: '0 auto'
+          }}>
+            <h1 style={{ margin: 0, fontSize: '1.5rem' }}>
+              Personal Care Product Safety Scanner
+            </h1>
             <nav>
-              <Link to="/" style={{ color: 'white', marginRight: '20px', textDecoration: 'none' }}>Scanner</Link>
-              <Link to="/sentiment" style={{ color: 'white', textDecoration: 'none' }}>Sentiment Dashboard</Link>
+              <Link to="/" style={{ color: 'white', marginRight: '20px', textDecoration: 'none' }}>
+                Scanner
+              </Link>
+              <Link to="/sentiment" style={{ color: 'white', textDecoration: 'none' }}>
+                Sentiment Dashboard
+              </Link>
             </nav>
           </div>
         </header>
         
-        <main style={{ padding: '20px' }}>
+        <main style={{ 
+          padding: '20px',
+          maxWidth: '1200px',
+          margin: '0 auto'
+        }}>
           <Routes>
             <Route path="/" element={<ScannerPage />} />
             <Route path="/sentiment" element={<SentimentDashboard />} />

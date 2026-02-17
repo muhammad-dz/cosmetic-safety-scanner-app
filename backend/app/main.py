@@ -4,8 +4,8 @@ from app.api import ocr, sentiment
 import uvicorn
 
 app = FastAPI(
-    title="Cosmetic Safety Scanner API",
-    description="API for scanning cosmetic products and analyzing safety & reviews",
+    title="Personal Care Product Safety Scanner API",  # Update this
+    description="API for scanning personal care products and analyzing safety & reviews",
     version="1.0.0"
 )
 
